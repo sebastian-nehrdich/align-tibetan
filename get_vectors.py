@@ -7,7 +7,7 @@ filename = sys.argv[1]
 number_of_overlays = int(sys.argv[2]) + 1 # +1 because we want to include the original sentence
 
 def process_file(filename):
-    model_path = "buddhist-nlp/skt-eng-similarity"
+    model_path = "buddhist-nlp/bod-eng-similarity"
     model = SentenceTransformer(model_path)
 
     model.max_seq_length = 500
